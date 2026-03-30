@@ -103,8 +103,8 @@ Over the years, I’ve worked with WordPress, custom JavaScript projects, and mo
               />
               <div className="relative glass rounded-3xl p-2 glow-border">
                 <img
-                  src="/profile-photo.jpg"
-                  alt="Pedro Machado"
+                  src="/robert_mikhel.jpg"
+                  alt="Robert Mikhel"
                   className="w-full aspect-[4/5] object-cover rounded-2xl"
                 />
 
