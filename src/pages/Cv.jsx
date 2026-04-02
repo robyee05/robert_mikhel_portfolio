@@ -99,62 +99,62 @@ const cvRef = useRef();
           {/* ORGANIZATION */}
          <div className="p-4 border border-border rounded-xl relative overflow-hidden">
 
-  {/* BACKGROUND TEXT */}
-  <span className="absolute text-[100px] font-bold opacity-[0.04] bottom-0 right-0 pointer-events-none">
-    EXPERIENCE
-  </span>
+        {/* BACKGROUND TEXT */}
+        <span className="absolute text-[100px] font-bold opacity-[0.04] bottom-0 right-0 pointer-events-none">
+          EXPERIENCE
+        </span>
+                
+        <h3 className="font-semibold mb-4">Organization</h3>
+                
+        <div className="space-y-3">
 
-  <h3 className="font-semibold mb-4">Organization</h3>
+        {/* JOB 1 */}
+        <div className="grid grid-cols-[120px_1fr] gap-4">
+            
+          {/* LEFT (DATE) */}
+          <div className="text-sm text-primary font-medium">
+            2021 - Present
+          </div>
 
-  <div className="space-y-3">
+          {/* RIGHT (CONTENT) */}
+          <div>
+            <p className="text-primary-foreground font-medium">
+              Fullstack Web Developer
+            </p>
+            <p className="text-sm text-muted-foreground">
+              Duna Autó Zrt.
+            </p>
+            <p className="text-sm text-muted-foreground mt-1">
+              Maintaining and developing Symfony-based web applications.
+            </p>
+          </div>
 
-    {/* JOB 1 */}
-    <div className="grid grid-cols-[120px_1fr] gap-4">
-      
-      {/* LEFT (DATE) */}
-      <div className="text-sm text-primary font-medium">
-        2021 - Present
-      </div>
+        </div>
 
-      {/* RIGHT (CONTENT) */}
-      <div>
-        <p className="text-primary-foreground font-medium">
-          Fullstack Web Developer
-        </p>
-        <p className="text-sm text-muted-foreground">
-          Duna Autó Zrt.
-        </p>
-        <p className="text-sm text-muted-foreground mt-1">
-          Maintaining and developing Symfony-based web applications.
-        </p>
-      </div>
+        {/* JOB 2 */}
+        <div className="grid grid-cols-[120px_1fr] gap-4">
+            
+          <div className="text-sm text-primary font-medium">
+            2019 - Present
+          </div>
+
+          <div>
+            <p className="text-primary-foreground font-medium">
+              Freelance Developer
+            </p>
+            <p className="text-sm text-muted-foreground">
+              Self-Employed
+            </p>
+            <p className="text-sm text-muted-foreground mt-1">
+              Building web applications using React and TypeScript.
+            </p>
+          </div>
+
+        </div>
 
     </div>
 
-    {/* JOB 2 */}
-    <div className="grid grid-cols-[120px_1fr] gap-4">
-      
-      <div className="text-sm text-primary font-medium">
-        2019 - Present
-      </div>
-
-      <div>
-        <p className="text-primary-foreground font-medium">
-          Freelance Developer
-        </p>
-        <p className="text-sm text-muted-foreground">
-          Self-Employed
-        </p>
-        <p className="text-sm text-muted-foreground mt-1">
-          Building web applications using React and TypeScript.
-        </p>
-      </div>
-
     </div>
-
-  </div>
-
-</div>
 
           {/* STACK */}
           <div className="p-4 border border-border rounded-xl">
