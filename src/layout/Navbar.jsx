@@ -31,7 +31,7 @@ export const Navbar = () => {
     >
       <nav className="container mx-auto px-6 flex items-center justify-between">
         <a
-          href="#"
+          href="/"
           className="text-xl font-bold tracking-tight hover:text-primary"
         >
           RM<span className="text-primary">.</span>
