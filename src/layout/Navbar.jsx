@@ -2,6 +2,7 @@ import { Button } from "@/components/Button";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const navLinks = [
   { href: "#about", label: "About" },
@@ -12,6 +13,20 @@ const navLinks = [
 export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const navigate = useNavigate();
+const location = useLocation();
+
+const handleScroll = (id) => {
+  if (location.pathname !== "/") {
+    navigate("/");
+    setTimeout(() => {
+      document.querySelector(id)?.scrollIntoView({ behavior: "smooth" });
+    }, 100);
+  } else {
+    document.querySelector(id)?.scrollIntoView({ behavior: "smooth" });
+  }
+};
+  
   
 
   useEffect(() => {
@@ -42,13 +57,13 @@ export const Navbar = () => {
         <div className="hidden md:flex items-center gap-1">
           <div className="glass rounded-full px-2 py-1 flex items-center gap-1">
             {navLinks.map((link, index) => (
-              <a
-                href={link.href}
+              <button
                 key={index}
+                onClick={() => handleScroll(link.href)}
                 className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground rounded-full hover:bg-surface"
               >
                 {link.label}
-              </a>
+              </button>
             ))}
           </div>
         </div>
@@ -74,19 +89,26 @@ export const Navbar = () => {
         <div className="md:hidden glass-strong animate-fade-in">
           <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
             {navLinks.map((link, index) => (
-              <a
-                href={link.href}
+              <button
                 key={index}
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="text-lg text-muted-foreground hover:text-foreground py-2"
+                onClick={() => {
+                  handleScroll(link.href);
+                  setIsMobileMenuOpen(false);
+                }}
+                className="text-lg text-muted-foreground hover:text-foreground py-2 text-left"
               >
                 {link.label}
-              </a>
+              </button>
             ))}
 
-            <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
+            <button
+              onClick={() => {
+                handleScroll("#contact");
+                setIsMobileMenuOpen(false);
+              }}
+            >
               <Button>Contact Me</Button>
-            </a>
+            </button>
           </div>
         </div>
       )}
