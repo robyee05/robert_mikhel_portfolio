@@ -19,24 +19,24 @@ const projects = [
     link: "https://dunaauto.hu/",
     // github: "#",
   },
-  // {
-  //   title: "AI Writing Assistant",
-  //   description:
-  //     "An intelligent writing tool powered by GPT-4, helping users create better content faster.",
-  //   image: "/projects/project3.png",
-  //   tags: ["React", "OpenAI", "Python", "FastAPI"],
-  //   link: "#",
-  //   // github: "#",
-  // },
-  // {
-  //   title: "Project Management Tool",
-  //   description:
-  //     "A collaborative workspace for teams with real-time updates, task tracking, and integrations.",
-  //   image: "/projects/project4.png",
-  //   tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
-  //   link: "#",
-  //   // github: "#",
-  // },
+  {
+    title: "Graphic Design Portfolio Page",
+    description:
+      "A WordPress-based portfolio site with custom UI elements and GSAP animations, focused on smooth and engaging user experience.",
+    image: "/projects/florafogarasi-web-project.jpg",
+    tags: ["Wordpress", "Elementor", "GSAP",],
+    link: "https://florafogarasi.com/",
+    // github: "#",
+  },
+  {
+    title: "Energy & E-Mobility Webshop",
+    description:
+      "An e-commerce platform focused on electric vehicle chargers and energy storage solutions. Built with WordPress and WooCommerce, supporting both residential and industrial product offerings.",
+    image: "/projects/dunawatt-project.jpg",
+    tags: ["WordPress", "WooCommerce", "JavaScript", "MySQL"],
+    link: "https://dunawatt.hu/",
+    // github: "#",
+  },
 ];
 
 export const Projects = () => {
