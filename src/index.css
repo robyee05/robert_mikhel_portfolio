@@ -181,3 +181,79 @@
       0 0 80px color-mix(in srgb, var(--color-primary) 25%, transparent);
   }
 }
+
+@media print {
+  /* OLDAL ALAP */
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  p {
+    margin: 0 !important;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin: 0 !important;
+  }
+
+  br {
+    display: none;
+  }
+
+  /* CV CONTAINER */
+  .cv-container {
+    background: white !important;
+    color: black !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  /* GLASS EFFECT OFF */
+  .glass {
+    background: white !important;
+    backdrop-filter: none !important;
+  }
+
+  /* SZÖVEGEK */
+  .text-foreground {
+    color: black !important;
+  }
+
+  .text-muted-foreground {
+    color: #444 !important;
+  }
+
+  /* PRIMARY SZÍN maradhat */
+  .text-primary {
+    color: #20b2a6 !important;
+  }
+
+  /* GOMB ELTÜNTETÉSE */
+  button {
+    display: none !important;
+  }
+
+  /* BACKGROUND HUGE TEXT halványabb */
+  span[class*="absolute"] {
+    opacity: 0.05 !important;
+  }
+
+  /* STACK BADGE RESET */
+  .bg-surface {
+    background: #f3f3f3 !important; /* halvány szürke */
+  }
+
+  .text-muted-foreground {
+    color: #333 !important;
+  }
+}
+
+.cv-container {
+  width: 794px;
+  min-height: 1123px;
+  margin: 0 auto;
+}

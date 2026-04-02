@@ -24,7 +24,7 @@ const projects = [
     description:
       "A WordPress-based portfolio site with custom UI elements and GSAP animations, focused on smooth and engaging user experience.",
     image: "/projects/florafogarasi-web-project.jpg",
-    tags: ["Wordpress", "Elementor", "GSAP",],
+    tags: ["WordPress", "Elementor", "GSAP",],
     link: "https://florafogarasi.com/",
     // github: "#",
   },

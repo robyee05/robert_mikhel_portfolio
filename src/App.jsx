@@ -1,28 +1,26 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import { Navbar } from "@/layout/Navbar";
-import { Hero } from "@/sections/Hero";
-import { About } from "@/sections/About";
-import { Experience } from "@/sections/Experience";
-import { Projects } from "@/sections/Projects";
-import { Testimonials } from "@/sections/Testimonials";
-import { Contact } from "@/sections/Contact";
 import { Footer } from "./layout/Footer";
 
-function App() {
+import Home from "./pages/Home";
+import Cv from "./pages/Cv";
 
+function App() {
   return (
-    <div className="min-h-screen overflow-x-hidden "> 
-    <Navbar/>
-    <main>
-      <Hero />
-      <About />
-      <Experience />
-      <Projects />
-      <Testimonials />
-      <Contact />
-    </main>  
-    <Footer/>
-    </div>
-  )
+    <BrowserRouter>
+      <div className="min-h-screen overflow-x-hidden">
+        <Navbar />
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/cv" element={<Cv />} />
+        </Routes>
+
+        <Footer />
+      </div>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

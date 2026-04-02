@@ -5,6 +5,7 @@ import {
     Download,
 } from "lucide-react";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
+import { Link } from "react-router-dom";
 
 const skills = [
   "React",
@@ -85,10 +86,12 @@ Over the years, I’ve worked with WordPress, custom JavaScript projects, and mo
                 Contact Me <ArrowRight className="w-5 h-5" />
               </Button>
               </a>
-              {/* <AnimatedBorderButton>
-                <Download className="w-5 h-5" />
-                Download CV
-              </AnimatedBorderButton> */}
+              <Link to="/cv">
+                <AnimatedBorderButton>
+                  <Download className="w-5 h-5" />
+                  Download CV
+                </AnimatedBorderButton>
+              </Link>
             </div>
           </div>
           {/* Right Column - Profile Image */}
